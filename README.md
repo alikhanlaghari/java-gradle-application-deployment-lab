@@ -160,8 +160,9 @@ The project follows a standard Gradle-based Java application structure. The sour
 
   - ss -lntp | grep 8080
 
-![Port and Process Validation 1](screenshots/16-port-check.png)(screenshots/17-ufw-allow-8080.png)
-![Port and Process Validation 3](screenshots/18-app-running-nohup.png)
+![Port Check](screenshots/16-port-check.png)
+![UFW Allow 8080](screenshots/17-ufw-allow-8080.png)
+![Application Running (nohup)](screenshots/18-app-running-nohup.png)
 
 ## Phase 16 — Application Access & Validation
 - Verified application endpoints via browser
@@ -172,7 +173,8 @@ The project follows a standard Gradle-based Java application structure. The sour
   - http://<droplet-ip>:8080/
   - http://<droplet-ip>:8080/health
 
-![[Application Access & Validation 1](screenshots/23-browser-home.png)(screenshots/24-browser-health.png)
+![Browser Home Endpoint](screenshots/23-browser-home.png)
+![Browser Health Endpoint](screenshots/24-browser-health.png)
 
 ---
 
