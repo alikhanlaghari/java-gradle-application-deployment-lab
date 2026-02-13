@@ -161,16 +161,39 @@ java-app/
 
   - ss -lntp | grep 8080
 
-![Port and Process Validation](screenshots/16-port-check.png)(screenshots/17-ufw-allow-8080.png)(screenshots/18-app-running-nohup.png)
+![Port and Process Validation 1](screenshots/16-port-check.png)
+![Port and Process Validation 2](screenshots/17-ufw-allow-8080.png)
+![Port and Process Validation 3](screenshots/18-app-running-nohup.png)
 
 ## Phase 16 — Application Access & Validation
+- Verified application endpoints via browser
+  - /
+  - /health
+    
+- Validated via browser:
+  - http://<droplet-ip>:8080/
+  - http://<droplet-ip>:8080/health
+
+![[Application Access & Validation 1](screenshots/23-browser-home.png)
+![[Application Access & Validation 2](screenshots/24-browser-health.png)
+
+---
+
+## Phase 17 — Application Shutdown
+- Stopped the application
+
+  - ps -ef | grep java
+  - kill <pid>
+
+![Application Shutdown](screenshots/25-app-stopped.png)
+
+## Phase 18 — Droplet Cleanup
 - Verified application endpoints via browser
 
   - /
   - /health
 
-![Application Access & Validation](screenshots/19-browser-8080.png)(screenshots/23-browser-home.png)(screenshots/24-browser-health.png)
-
+![Phase 16 — Droplet Cleanup](screenshots/26-droplet-powered-off.png)
 
 ---
 
