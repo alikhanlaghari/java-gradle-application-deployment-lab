@@ -27,15 +27,15 @@ The focus is not just running an application, but:
 
 ## Project Structure
 
-java-app/
-├── src/main/java/com/example/
-│   ├── App.java
-│   └── HelloController.java
-├── build/libs/
-│   ├── java-app-1.0-SNAPSHOT.jar
-│   └── java-app-1.0-SNAPSHOT-plain.jar
-├── build.gradle
-└── gradlew
+The project follows a standard Gradle-based Java application structure. The source code resides under src/main/java/com/example, containing the main Spring Boot entry point App.java and the REST controller HelloController.java. Build artifacts are generated in the build/libs directory, including the executable java-app-1.0-SNAPSHOT.jar and the corresponding -plain JAR. The project is managed using Gradle, with build.gradle defining dependencies and build logic, gradlew providing the Gradle wrapper for consistent builds across environments, and settings.gradle handling project-level configuration.
+
+---
+## Deployment Phases
+
+###  Phase 1-7: Server Hardening
+###  Phase 8-12: Application Prep & Transfer
+### Phase 13-16: Execution & Validation
+###  Phase 17-18: Application Shutdown & Cleanup
 
 ---
 
@@ -194,6 +194,8 @@ java-app/
   - /health
 
 ![Phase 16 — Droplet Cleanup](screenshots/26-droplet-powered-off.png)
+
+
 
 ---
 
