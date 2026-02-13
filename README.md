@@ -68,7 +68,6 @@ The project follows a standard Gradle-based Java application structure. The sour
   
   - rsync --archive --chown=ali:ali ~/.ssh /home/ali
 
-📸 screenshots/04-copy-ssh-keys.png
 ![Copy SSH Keys to Non-Root User](screenshots/04-copy-ssh-keys.png)
 
 ## Phase 5 — SSH Hardening
@@ -161,8 +160,7 @@ The project follows a standard Gradle-based Java application structure. The sour
 
   - ss -lntp | grep 8080
 
-![Port and Process Validation 1](screenshots/16-port-check.png)
-![Port and Process Validation 2](screenshots/17-ufw-allow-8080.png)
+![Port and Process Validation 1](screenshots/16-port-check.png)(screenshots/17-ufw-allow-8080.png)
 ![Port and Process Validation 3](screenshots/18-app-running-nohup.png)
 
 ## Phase 16 — Application Access & Validation
@@ -174,8 +172,7 @@ The project follows a standard Gradle-based Java application structure. The sour
   - http://<droplet-ip>:8080/
   - http://<droplet-ip>:8080/health
 
-![[Application Access & Validation 1](screenshots/23-browser-home.png)
-![[Application Access & Validation 2](screenshots/24-browser-health.png)
+![[Application Access & Validation 1](screenshots/23-browser-home.png)(screenshots/24-browser-health.png)
 
 ---
 
